@@ -76,7 +76,7 @@ public class frmAddSIM extends javax.swing.JFrame {
         btnBack = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(350, 32));
+        setLocation(new java.awt.Point(350, 0));
         setMinimumSize(new java.awt.Dimension(700, 700));
         setSize(new java.awt.Dimension(700, 700));
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -98,7 +98,9 @@ public class frmAddSIM extends javax.swing.JFrame {
         lblAddSIMnumber.setForeground(new java.awt.Color(65, 105, 225));
         lblAddSIMnumber.setText("SỐ SIM");
 
+        txtAddSIMnumber.setBackground(new java.awt.Color(250, 250, 210));
         txtAddSIMnumber.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        txtAddSIMnumber.setBorder(null);
         txtAddSIMnumber.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtAddSIMnumberKeyReleased(evt);
@@ -109,7 +111,9 @@ public class frmAddSIM extends javax.swing.JFrame {
         lblAddSIMprice.setForeground(new java.awt.Color(65, 105, 225));
         lblAddSIMprice.setText("GIÁ BÁN");
 
+        txtAddSIMprice.setBackground(new java.awt.Color(250, 250, 210));
         txtAddSIMprice.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        txtAddSIMprice.setBorder(null);
         txtAddSIMprice.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtAddSIMpriceKeyReleased(evt);
@@ -226,7 +230,7 @@ public class frmAddSIM extends javax.swing.JFrame {
                 .addComponent(lblAddSIMkind_of)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cboAddSIMkind_of, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                 .addGroup(pnlAddSIMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)

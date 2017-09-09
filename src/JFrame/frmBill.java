@@ -73,7 +73,7 @@ public class frmBill extends javax.swing.JFrame {
         lblinfoSim2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(200, 40));
+        setLocation(new java.awt.Point(200, 20));
         setMinimumSize(new java.awt.Dimension(900, 610));
         setPreferredSize(new java.awt.Dimension(900, 610));
         setSize(new java.awt.Dimension(900, 610));
@@ -106,14 +106,18 @@ public class frmBill extends javax.swing.JFrame {
 
         pnlBillbottom.setBackground(new java.awt.Color(250, 250, 210));
 
+        txtName.setBackground(new java.awt.Color(250, 250, 210));
         txtName.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        txtName.setBorder(null);
         txtName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtNameKeyReleased(evt);
             }
         });
 
+        txtNumber.setBackground(new java.awt.Color(250, 250, 210));
         txtNumber.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        txtNumber.setBorder(null);
         txtNumber.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtNumberKeyReleased(evt);
@@ -158,7 +162,7 @@ public class frmBill extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblinfoSim2, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblinfoSim3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblinfoSim3, javax.swing.GroupLayout.DEFAULT_SIZE, 414, Short.MAX_VALUE)
                 .addContainerGap())
         );
         pnlLayout.setVerticalGroup(
@@ -188,9 +192,9 @@ public class frmBill extends javax.swing.JFrame {
                             .addComponent(lblNumber, javax.swing.GroupLayout.Alignment.LEADING))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnlBillbottomLayout.createSequentialGroup()
-                        .addComponent(lblExit)
+                        .addComponent(lblPrint)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblPrint)))
+                        .addComponent(lblExit)))
                 .addContainerGap())
         );
         pnlBillbottomLayout.setVerticalGroup(
@@ -206,10 +210,10 @@ public class frmBill extends javax.swing.JFrame {
                 .addComponent(txtNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addGroup(pnlBillbottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblPrint, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblExit, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(lblPrint)
+                    .addComponent(lblExit))
                 .addContainerGap())
         );
 

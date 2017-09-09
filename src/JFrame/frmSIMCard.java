@@ -40,7 +40,7 @@ public class frmSIMCard extends javax.swing.JFrame {
         kind_of = "Thường";
         chbVinaphone.setSelected(true);
         ScrollPaneSIM.getViewport().setBackground(new java.awt.Color(250, 250, 210));
-        this.setExtendedState(this.MAXIMIZED_BOTH);
+        //this.setExtendedState(this.MAXIMIZED_BOTH);
         this.getContentPane().setBackground(new java.awt.Color(250, 250, 210));
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconfrm.png")));
         this.setTitle("QUẢN LÝ BÁN THẺ SIM ĐIỆN THOẠI DI ĐỘNG DEMO");

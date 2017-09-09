@@ -3,6 +3,7 @@ package JFrame;
 import java.awt.Color;
 import java.awt.GridBagLayout;
 import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
@@ -111,7 +112,9 @@ public class frmLogin extends javax.swing.JFrame {
 
         lblimageLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/account_128.png"))); // NOI18N
 
+        txtUsername.setBackground(new java.awt.Color(250, 250, 210));
         txtUsername.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
+        txtUsername.setBorder(null);
         txtUsername.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtUsername.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -119,7 +122,14 @@ public class frmLogin extends javax.swing.JFrame {
             }
         });
 
+        txtPassword.setBackground(new java.awt.Color(250, 250, 210));
         txtPassword.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
+        txtPassword.setBorder(null);
+        txtPassword.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtPasswordKeyPressed(evt);
+            }
+        });
 
         btnLogin.setBackground(new java.awt.Color(34, 139, 34));
         btnLogin.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
@@ -221,6 +231,12 @@ public class frmLogin extends javax.swing.JFrame {
     private void txtUsernameKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsernameKeyReleased
         txtUsername.setForeground(Color.BLACK);
     }//GEN-LAST:event_txtUsernameKeyReleased
+
+    private void txtPasswordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPasswordKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            checkLogin();
+        }
+    }//GEN-LAST:event_txtPasswordKeyPressed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
